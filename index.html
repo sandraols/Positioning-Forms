@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning & Forms</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="site">
+        <section class="main-container">
+            <div class="leftside--container">
+                <form class="form__container">
+                    <label class="form__label" for="card-number">CARD NUMBER</label>
+                    <input 
+                        class="form__input" 
+                        type="tel" 
+                        name="card-number" 
+                        id="card-number" 
+                        inputmode="numeric" 
+                        pattern="[0-9\s]{13,19}" 
+                        autocomplete="cc-number"
+                        minlength="16" 
+                        maxlength="19" 
+                        placeholder="0000 0000 0000 0000"
+                        autofocus
+                        required>
+                    <div class="flex__between">
+                        <div class="aligned__items">
+                            <label class="form__label" for="month-year">MM/YY</label>
+                            <input 
+                                class="form__input" 
+                                type="number" 
+                                name="month-year" 
+                                id="month-year" 
+                                placeholder="00/00"
+                                inputmode="numeric" 
+                                pattern="[0-9\s]"
+                                minlength="4"
+                                maxlength="5"
+                                required>
+                        </div>
+                        <div class="aligned__items">
+                            <label class="form__label" for="cvv">CVV</label>
+                            <input 
+                                class="form__input" 
+                                type="password" 
+                                name="cvv" 
+                                id="cvv" 
+                                placeholder="CVV"
+                                inputmode="numeric"
+                                minlength="3"
+                                maxlength="3"
+                                required>
+                        </div>
+                    </div>
+                    <label class="form__label" for="name">CARDHOLDER FULL NAME</label>
+                    <input 
+                        class="form__input" 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Name Surname"
+                        required>
+                    <input class="form__button" type="submit" value="Pay now">
+                </form>
+            </div>
+            <div class="rightside--container">
+                <img class="image" src="./assets/images/rubber-duck.png" alt="png of a rubber duck">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
