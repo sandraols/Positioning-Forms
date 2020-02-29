@@ -125,7 +125,7 @@ input::selection {
     transition: .2s;
 }
 
-.form--button:hover {
+.form__button:hover {
     cursor: pointer;
     background-color: rgb(0, 0, 0);
 }
