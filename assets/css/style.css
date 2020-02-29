@@ -33,9 +33,9 @@ body {
 
 /*------- LEFT SIDE CONTAINER --------*/
 
-.leftside--container {
+.leftside__container {
     flex-grow: 2;
-    background-color: rgb(248, 239, 219);
+    background-color: rgb(255, 249, 235);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -59,6 +59,9 @@ body {
     margin-bottom: 7px;
     margin-right: 70px;
 }
+
+
+/*------- FORM INPUTS --------*/
 
 .form__input {
     margin-bottom: 5vh;
@@ -85,28 +88,8 @@ body {
     text-transform: uppercase;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-    -moz-appearance:textfield;
-  }
-
 input::selection {
     background-color: rgb(255, 225, 53);
-}
-
-.flex__between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.aligned__items {
-    display: flex;
-    flex-direction: column;
 }
 
 .form__button {
@@ -130,9 +113,20 @@ input::selection {
     background-color: rgb(0, 0, 0);
 }
 
+.flex__between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aligned__items {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*------- RIGHT SIDE CONTAINER --------*/
 
-.rightside--container {
+.rightside__container {
     flex-grow: 1;
     background-color: rgb(253, 146, 6);
     min-width: 4vw;
